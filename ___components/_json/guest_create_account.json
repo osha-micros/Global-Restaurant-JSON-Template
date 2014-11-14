@@ -1,0 +1,15 @@
+{
+    "name": "Guest Create Account",
+    "about": "/guest/create/account",
+    "typeof": "Component",
+    "guestCreateAccount": {
+        "labels": {
+            "text": {
+                "title": "Don't have an account?"
+            },
+            "button": {
+                "createAccount": "Create an account"
+            }
+        }
+    }
+}

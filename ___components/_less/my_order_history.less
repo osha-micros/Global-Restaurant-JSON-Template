@@ -1,0 +1,145 @@
+.my-order-history {
+    &-area-top {
+        width: 550px;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 440px) {
+            width: 98%;
+        }
+
+        @media only screen and (min-width: 441px) and (max-width: 679px) {
+            width: 86%;
+        }
+    }
+
+    &-time-range-form {
+        label {
+            @media only screen and (max-width: 440px) {
+                font-size: 12px;
+            }
+        }
+        &__time-range {
+            width: 175px;
+            display: inline-block;
+            margin-left: 25px;
+
+            @media only screen and (max-width: 440px) {
+                width: 150px;
+                margin-left: 2px;
+            }
+        }
+        &__tip {
+            font-size: 12px;
+        }
+    }
+
+    &-area-bottom {
+    }
+    
+    &__panels {
+        &-wrapper {
+        }
+        
+        &-inner {
+        }
+    }
+    
+    &__panel {
+        position: relative;
+
+        &-heading {
+            background-color: @white;
+            cursor: pointer;
+            color: @black;
+
+            &.collapsed {
+                .my-order-history__panel-title:before {
+                    content: "[ + ]" !important;
+                }
+            }
+        }
+        
+        &-title {
+            &:before {
+                position: absolute;
+                left: 5px;
+                content: "[ - ]";
+            }
+        }
+        
+        &-body {
+        }
+    }
+    
+    &__item-top-area {
+        display: table;
+        width: 100%;
+    }
+
+    &__date-time-bar {
+        display: table-cell;
+        vertical-align: top;
+        width: auto;
+        padding-left: 30px;
+
+        @media only screen and (max-width: 370px) {
+            display: block;
+        }
+    }
+
+    &__date-time {
+        margin-bottom: 2px;
+    }
+
+    &__re-order-btn {
+        display: table-cell;
+        vertical-align: top;
+        width: 136px;
+        cursor: pointer;
+        float: right;
+
+        @media only screen and (max-width: 370px) {
+            display: block;
+            margin-top: 8px;
+        }
+    }
+
+    &__list {
+        &-item {
+            clear: both;
+            min-height: 70px;
+            margin-bottom: 10px;
+
+            &-image {
+                max-height: 70px;
+
+                &-area {
+                    text-align: center;
+                    float: left;
+                    width: 82px;
+                }
+            }
+
+            &-text-area {
+                margin-left: 100px;
+            }
+
+            &-title {
+                vertical-align: top;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            &-description {
+                &-line {
+                    vertical-align: top;
+                    color: #ccc;
+                    font-size: 12px;
+                    max-width: 300px;
+                }
+            }
+
+        }
+    }
+
+}

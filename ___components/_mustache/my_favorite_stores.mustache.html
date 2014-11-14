@@ -1,0 +1,26 @@
+<script id="my_favorite_stores_template" type="text/html">
+
+    <section class="my-favorite-stores" about="{{about}}" typeof="{{typeof}}">
+        {{#myFavoriteStores}}
+        <div class="my-favorite-stores__title">{{{labels.text.title}}}</div>
+        <ul class="my-favorite-stores__list">
+            {{#locations}}
+            <li>
+                <div class="my-favorite-stores__number">{{number}}</div>
+                <div class="my-favorite-stores__location">
+                    <div class="my-favorite-stores__store-title">{{{storeTitle}}} <span class="my-favorite-stores__actions"><a href="{{links.remove.path}}" class="my-favorite-stores__action-remove">{{{links.remove.title}}}</a></span></div>
+                    <div class="my-favorite-stores__line">{{{address.line_1}}}</div>
+                    <div class="my-favorite-stores__line">{{{address.line_2}}}</div>
+                    <div class="my-favorite-stores__line my-favorite-stores__line-phone">{{{address.phone}}}</div>
+                    <a href="{{links.orderNow.path}}" class="my-favorite-stores__order-now">{{{links.orderNow.title}}}</a>
+                </div>
+            </li>
+            {{/locations}}
+        </ul>
+        <div class="my-favorite-stores__add-store-btn-area">
+            <button class="my-favorite-stores__add-store-btn btn btn-gold">{{{labels.button.addStore}}}</button>
+        </div>
+        {{/myFavoriteStores}}
+    </section>
+
+</script>

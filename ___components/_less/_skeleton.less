@@ -1,0 +1,309 @@
+//Generic Page Start
+.generic-page-wrapper {
+    .generic-page-inner {
+        background: @white;
+        width: 100%;
+        margin: 0 auto;
+        color: @black;
+        margin-top: 30px;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%
+        }
+    }
+}
+//Generic Page End
+
+a {
+    color: @baseRed;
+}
+
+//Content Start
+.content-wrapper {
+    width: 100%;
+
+    .content-inner {
+        width: 90%;
+        margin: 0 auto;
+        padding: 25px 0;
+    }
+}
+//Conent End
+
+//Home Start
+.home-page-inner {
+    margin-top: 10px;
+}
+.store-location-area {
+    display: table;
+    width: 100%;
+
+    @media only screen and (max-width: 1000px) {
+        display: block;
+    }
+
+    .store-location-left {
+        display: table-cell;
+        vertical-align: top;
+        width: 50%;
+
+        @media only screen and (max-width: 1000px) {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .store-location-right {
+        display: table-cell;
+        vertical-align: bottom;
+        width: 50%;
+
+        @media only screen and (max-width: 679px) {
+            margin-bottom: 8px;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}
+//Home End
+
+//Store Details Start
+.store-details-wrapper {
+    .store-details-inner {
+
+        .store-details-inner-container {
+            .store-details-content {
+                width: 100%;
+
+                section.store-details-content-top {
+                    background: @white;
+                    padding: 14px;
+                    overflow: hidden;
+
+                    > span {
+                        @media only screen and (max-width: 630px) {
+                            text-align: center;
+                            display: block;
+                            margin: 0 auto;
+                            float: none !important;
+                        }
+                    }
+                }
+
+                section.store-details-content-bottom {
+                    display: table;
+                    width: 100%;
+                    background: @white;
+                    padding: 14px;
+                    .border-radius(0 0 5px 5px);
+
+                    &-left, &-right {
+                        display: table-cell;
+                        width: 50%;
+                        vertical-align: top;
+
+                        @media only screen and (max-width: 679px) {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+
+            }
+        }        
+
+    }
+}
+//Store Details End
+
+//Account Navigation Start
+section.account-page-top {
+    text-align: center;
+}
+//Account Navigation End
+
+//Contact Us Start
+.contact-us-wrapper {
+    .contact-us-inner {
+        margin-top: 26px;
+
+        .contact-us-inner-container {
+            display: table;
+            width: 100%;
+
+            .contact-us-content {
+                display: table-cell;
+                padding-right: 15px;
+
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+
+.contact-us-sidebar {
+    width: 258px;
+    display: table-cell;
+    vertical-align: top;
+
+    @media only screen and (max-width: 768px) {
+        display: none;
+    }
+}
+//Contact Us End
+
+//Create Account Start
+.create-account-wrapper {
+    .create-account-inner {
+        .create-account-inner-container {
+            display: table;
+            width: 100%;
+
+            .create-account-content {
+                display: table-cell;
+                padding-right: 15px;
+
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}
+.create-account-sidebar {
+    width: 258px;
+    display: table-cell;
+    vertical-align: top;
+
+    @media only screen and (max-width: 768px) {
+        display: block;
+        width: 100%;
+    }    
+}
+//Create Account End
+
+
+//Account Pages Start
+.account-page-wrapper {
+    .account-page-inner {
+        .account-page-bottom {
+            background: @white;
+            margin-top: 23px;
+            .border-radius(5px);
+
+            @media only screen and (max-width: 595px) {
+                &.account-page-bottom-addresses-stores {
+                    .border-radius(0);
+                }
+            }
+
+            @media only screen and (max-width: 585px) {
+                &.account-page-bottom-favorite-orders {
+                    .border-radius(0);
+                }
+            }
+
+            .account-page-bottom-inner {
+                display: table;
+                width: 100%;
+                
+                //My Addresses and Stores Start
+                &.my-addresses-stores-area {
+                    display: table;
+                    margin: 0 auto;
+                    width: 80%;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                    }
+                    
+                    .my-addresses-stores-left, .my-addresses-stores-right {
+                        display: table-cell;
+                        width: 50%;
+
+                        @media only screen and (max-width: 595px) {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                }
+                //My Addresses and Stores End
+                
+                //My Favorite Orders Start
+                &.my-favorite-orders-area {
+                    display: table;
+                    width: 100%;
+                    border-collapse: collapse;
+                }
+                //My Favorite Orders End
+                
+                //My Order History Start
+                &.my-order-history-area {
+                    display: table;
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 14px;
+
+                    @media only screen and (max-width: 500px) {
+                        display: block;
+                    }
+
+                    @media only screen and (max-width: 679px) {
+                        width: 100%;
+                    }
+                }
+                //My Order History End
+            }
+        }
+    }
+}
+//Account Pages End
+
+//Login Page Start
+.login-account-wrapper {
+    .login-account-inner {
+        margin-top: 77px;
+        
+        .login-account-inner-container {
+            display: table;
+            width: 100%;
+            
+            .login-account-content {
+                display: table-cell;
+                padding-right: 15px;
+
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                    padding-right: 0;
+                    margin-bottom: 20px;
+                }
+                
+                .login-account-content-inner {
+                    background: @white;
+                    .border-radius(5px);
+                }
+            }
+
+            .login-account-sidebar {
+                width: 258px;
+                display: table-cell;
+                vertical-align: top;
+                
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+//Login Page End

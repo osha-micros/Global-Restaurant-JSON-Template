@@ -1,0 +1,29 @@
+.guest-create-account {
+    padding: 14px 14px 25px 14px;
+    border-bottom: 1px solid #ccc;
+
+    @media only screen and (max-width: 405px) {
+        padding-bottom: 5px;
+    }
+
+    &__title {
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    &__actions {
+        margin: 26px 0 11px 0;
+    }
+    
+    &__create-account-btn {
+        a {
+            text-color: @white;
+        }
+        @media only screen and (max-width: 405px) {
+            display: block;
+            width: 270px;
+            margin-bottom: 16px;
+        }
+    }
+}

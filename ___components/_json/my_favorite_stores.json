@@ -1,0 +1,55 @@
+{
+    "name": "My Favorite Stores",
+    "about": "/my/favorite/stores",
+    "typeof": "Component",
+    "myFavoriteStores": {
+        "labels": {
+            "text": {
+                "title": "My Favorite Stores"
+            },
+            "button": {
+                "addStore": "Add Store"
+            }
+        },
+        "locations": [
+            {
+                "number": "1",
+                "storeTitle" : "Tysons Galleria Store",
+                "address": {
+                    "line_1": "1743 International Drive",
+                    "line_2": "McLean VA 22102",
+                    "phone": "(703) 639-0355"
+                },
+                "links": {
+                    "orderNow": {
+                        "path": "#",
+                        "title": "Order Now"
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                }
+            },
+            {
+                "number": "2",
+                "storeTitle" : "Dupont Circle Store",
+                "address": {
+                    "line_1": "1512 Connecticut Ave NW",
+                    "line_2": "Washington, DC, 20036",
+                    "phone": "(202) 387-9338"
+                },
+                "links": {
+                    "orderNow": {
+                        "path": "#",
+                        "title": "Order Now"
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                }
+            }
+        ]
+    }
+}

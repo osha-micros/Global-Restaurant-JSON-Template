@@ -1,0 +1,31 @@
+.quick-links {
+    background: #222;
+    padding: 10px;
+    color: @white;
+    margin-bottom: 20px;
+    width: 258px;
+    .border-radius(5px);
+
+    @media only screen and (max-width: 768px) {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    &__list {
+        list-style-position: inside;
+        list-style-type: disc;
+
+        li {
+            font-size: 12px;
+            margin-bottom: 8px;
+
+            a {
+                color: @white;
+            }
+        }
+    }
+}

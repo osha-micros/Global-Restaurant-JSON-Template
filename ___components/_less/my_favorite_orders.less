@@ -1,0 +1,100 @@
+.my-favorite-orders {
+    &__item {
+        display: table-cell;
+        width: 50%;
+        border-right: 1px solid #ccc;
+        padding: 14px 20px 14px 14px;
+
+        @media only screen and (max-width: 585px) {
+            display: block;
+            width: 100%;
+            border-top: 18px solid @white; //to match $pageBGColor
+
+            &:first-child {
+                border-top: 0;
+            }
+        }
+
+        &:last-child {
+            border-right: 0;
+        }
+        
+        &-row {
+            display: table-row;
+            width: 100%;
+            border-bottom: 30px solid @white;
+        }
+    }
+    
+    &__date-time-bar {
+        float: left;
+
+        @media only screen and (max-width: 400px) {
+            float: none;
+        }
+
+        @media only screen and (min-width: 586px) and (max-width: 855px) {
+            float: none;
+        }
+    }
+
+    &__date-time {
+        font-weight: bold;
+    }
+
+    &__actions {
+        margin-left: 10px;
+        font-size: 12px;
+    }
+
+    &__re-order-btn {
+        float: right;
+
+        @media only screen and (max-width: 400px) {
+            float: none;
+            margin: 8px 0;
+        }
+
+        @media only screen and (min-width: 586px) and (max-width: 855px) {
+            float: none;
+            margin: 8px 0;
+        }
+    }
+
+    &__list {
+        &-item {
+            clear: both;
+            min-height: 70px;
+            margin-bottom: 10px;
+
+            &-image {
+                max-height: 70px;
+
+                &-area {
+                    text-align: center;
+                    float: left;
+                    width: 82px;
+                }
+            }
+
+            &-text-area {
+                margin-left: 100px;
+            }
+
+            &-title {
+                vertical-align: top;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            &-description {
+                &-line {
+                    vertical-align: top;
+                    color: #ccc;
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,79 @@
+<script id="my_order_history_template" type="text/html">
+
+    <section class="my-order-history" about="{{about}}" typeof="{{typeof}}">
+        
+        <div class="my-order-history-area-top">
+            {{#myOrderHistoryFormTimeRange}}
+            <form class="my-order-history-time-range-form" action="#">
+                <div class="form-group my-order-history-time-range-form__select-form-group">
+                    <label for="my-order-history-time-range-form__time-range">{{{labels.text.timeRange}}}</label>
+                    <select class="form-control my-order-history-time-range-form__time-range">
+                        {{#timeRanges}}
+                            <option value="{{value}}" {{#selected}}selected{{/selected}}>{{timeRange}}</option>
+                        {{/timeRanges}}
+                    </select>
+                    
+                </div>
+                <p class="my-order-history-time-range-form__tip">{{{labels.text.formTip}}}</p>
+            </form>
+            {{/myOrderHistoryFormTimeRange}}
+        </div>
+
+        <div class="my-order-history-area-bottom">       
+            {{#myOrderHistoryOrders}}
+            <div class="my-order-history__panels-wrapper">
+                <div class="my-order-history__panels-inner">
+                    <div class="my-order-history__panels panel-group">
+
+                        {{#order}}
+                        <div class="my-order-history__panel panel">
+                            <div class="my-order-history__panel-heading panel-heading {{#panelExpanded}}{{/panelExpanded}}{{^panelExpanded}}collapsed{{/panelExpanded}}" data-toggle="collapse" data-parent=".my-order-history__panels" href="#my-order-history__panel-collapse-{{{panelNumber}}}">
+                                <h4 class="my-order-history__panel-title panel-title">
+                                    <div class="my-order-history__item-top-area">
+                                        <div class="my-order-history__date-time-bar">
+                                            <div class="my-order-history__date-time">{{{dateTime}}}</div>
+                                            <div class="my-order-history__number">{{{labels.text.orderNumber}}}{{{orderNumber}}}</div>
+                                        </div>
+                                        <a href="{{links.reOrder.path}}" class="my-order-history__re-order-link">
+                                            <button class="my-order-history__re-order-btn btn btn-gold">{{{labels.button.reOrder}}}</button>
+                                        </a>
+                                    </div>
+                                </h4>
+                            </div>
+                            <div id="my-order-history__panel-collapse-{{{panelNumber}}}" class="my-order-history__panel-collapse panel-collapse collapse {{#panelExpanded}}in{{/panelExpanded}}">
+                                <div class="my-order-history__panel-body panel-body">          
+
+                                    <div class="my-order-history__item">
+                                        <ul class="my-order-history__list">
+                                            {{#orderItems}}
+                                            <li class="my-order-history__list-item">
+                                                <div class="my-order-history__list-item-details">
+                                                    <div class="my-order-history__list-item-image-area">
+                                                        <img class="my-order-history__list-item-image" src="{{image.src}}" alt="{{image.alt}}" width="{{image.width}}" height="{{image.height}}">
+                                                    </div>
+                                                    <div class="my-order-history__list-item-text-area">
+                                                        <div class="my-order-history__list-item-title">{{{title}}}</div>
+                                                        <div class="my-order-history__list-item-description">
+                                                            <div class="my-order-history__list-item-description-line">{{{description}}}</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            {{/orderItems}}
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        {{/order}}
+        
+                    </div>
+                </div>
+            </div>
+            {{/myOrderHistoryOrders}}
+        </div>
+        
+    </section>
+
+</script>

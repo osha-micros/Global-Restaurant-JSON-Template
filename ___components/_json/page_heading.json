@@ -1,0 +1,51 @@
+{
+    "name": "Page Heading",
+    "about": "/page/heading",
+    "typeof": "Component",
+    "pageHeading": {
+        "storeDetails": {
+            "title" : "Store Details:",
+            "clazz" : "",
+            "secondaryHeading" : {
+                "title": "Dupont Circle",
+                "clazz": ""
+            }
+        },
+        "contactUs": {
+            "title" : "Contact Us",
+            "clazz": ""
+        },
+        "createAccount": {
+            "title" : "Create an account for faster ordering &amp; special offers",
+            "clazz": ""
+        },
+        "editAccount": {
+            "title" : "Edit Account Information:",
+            "clazz": ""
+        },
+        "myAccountInformation": {
+            "title" : "My Account Information",
+            "clazz": "page-heading__primary-heading-account"
+        },
+        "myAddressesAndStores": {
+            "title" : "My Addresses &amp; Stores",
+            "clazz": "page-heading__primary-heading-account"
+        },
+        "myFavoriteOrders": {
+            "title" : "My Favorite Orders",
+            "clazz": "page-heading__primary-heading-account"
+        },
+        "myOrderHistory": {
+            "title" : "My Order History",
+            "clazz": "page-heading__primary-heading-account"
+        },
+        "forgotPassword": {
+            "title" : "Reset your password",
+            "clazz": ""
+        },
+        "changePassword": {
+            "title" : "Change your password",
+            "clazz": ""
+        }
+    }
+}

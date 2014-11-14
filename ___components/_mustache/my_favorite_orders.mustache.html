@@ -1,0 +1,41 @@
+<script id="my_favorite_orders_template" type="text/html">
+
+    <section class="my-favorite-orders" about="{{about}}" typeof="{{typeof}}">
+        {{#myFavoriteOrders}}
+        {{#order}}
+        <div class="my-favorite-orders__item">
+            
+            <div class="my-favorite-orders__item-top-area">
+                <div class="my-favorite-orders__date-time-bar">
+                    <span class="my-favorite-orders__date-time">{{{dateTime}}}</span>
+                    <span class="my-favorite-orders__actions"><a href="{{links.remove.path}}" class="my-favorite-orders__action-remove">{{{links.remove.title}}}</a></span>
+                </div>
+                <a href="{{links.reOrder.path}}" class="my-favorite-orders__re-order-link">
+                    <button class="my-favorite-orders__re-order-btn btn btn-gold">{{{labels.button.reOrder}}}</button>
+                </a>
+            </div>
+            
+            <ul class="my-favorite-orders__list">
+                {{#orderItems}}
+                <li class="my-favorite-orders__list-item">
+                    <div class="my-favorite-orders__list-item-details">
+                        <div class="my-favorite-orders__list-item-image-area">
+                            <img class="my-favorite-orders__list-item-image" src="{{image.src}}" alt="{{image.alt}}" width="{{image.width}}" height="{{image.height}}">
+                        </div>
+                        <div class="my-favorite-orders__list-item-text-area">
+                            <div class="my-favorite-orders__list-item-title">{{{title}}}</div>
+                            <div class="my-favorite-orders__list-item-description">
+                                <div class="my-favorite-orders__list-item-description-line">{{{description}}}</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                {{/orderItems}}
+            </ul>
+            
+        </div>
+        {{/order}}
+        {{/myFavoriteOrders}}
+    </section>
+    
+</script>

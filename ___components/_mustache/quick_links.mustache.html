@@ -1,0 +1,14 @@
+<script id="quick_links_template" type="text/html">
+
+    <section class="quick-links" about="{{about}}" typeof="{{typeof}}">
+        {{#quickLinks}}
+        <div class="quick-links__title yellow-text">{{{quickLinks.labels.text.title}}}</div>
+        {{/quickLinks}}
+        <ul class="quick-links__list">
+            {{#navigation.value}}
+                <li><a class="{{clazz}}" href="{{path}}" data-tag="{{dataTag}}">{{{title}}}</a></li>
+            {{/navigation.value}}
+        </ul>
+    </section>
+
+</script>

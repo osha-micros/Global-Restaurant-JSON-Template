@@ -1,0 +1,63 @@
+.my-saved-addresses {
+    border-right: 1px solid #ccc;
+    padding: 14px 20px 20px 14px;
+
+    @media only screen and (max-width: 595px) {
+        border: 0;
+    }
+    
+    a {
+        color: @baseRed;
+
+        &:hover, &:active, &:focus {
+            color: @baseRed;
+        }
+    }
+    
+    &__title {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    &__actions {
+        font-weight: normal;
+        float: right;
+    }
+
+    &__list {
+        > li {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            min-width: 200px;
+            min-height: 102px;
+            
+            .my-saved-addresses {
+                &__number {
+                    width: 20px;
+                    height: 20px;
+                    font-size: 14px;
+                    color: @white;
+                    line-height: 20px;
+                    text-align: center;
+                    background: @black;
+                    float: left;
+                    position: relative;
+                    margin-right: 10px;
+                    .border-radius(20px);
+                }
+
+                &__location {
+                    margin-left: 35px;
+                    font-size: 12px;
+                    color: gray;
+                }
+            }
+        }
+    }
+
+    &__add-address-btn {
+        margin-left: 35px;
+    }
+}

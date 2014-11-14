@@ -1,0 +1,46 @@
+.edit-account {
+    &-form {
+        .form-control {
+            margin-bottom: 5px;
+        }
+
+        .form-group {
+            display: inline-block;
+
+            label {
+                white-space: nowrap;
+            }
+
+            > span {
+                display: inline-block;
+                margin-right: 10px;
+
+                @media only screen and (max-width: 500px) {
+                    width: 100% !important;
+                    display: block;
+                }
+            }
+
+            &-full-name, &-email-password, &-phone {
+                width: 100%;
+            }
+        }
+        
+        &__password-area {
+            vertical-align: top !important;
+        }
+
+        &__password-change-link {
+            color: @baseRed !important;
+            line-height: 32px;
+        }
+
+        &__first-name-area, &__last-name-area, &__email-address-area, &__password-area, &__phone-number-area {
+            width: 48%;
+        }
+
+        &__submit-btn-area {
+            text-align: left;
+        }
+    }
+}

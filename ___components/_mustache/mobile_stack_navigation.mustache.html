@@ -1,0 +1,11 @@
+<script id="mobile_stack_navigation_template" type="text/html">
+
+    <section class="mobile-stack-navigation" about="{{about}}" typeof="{{typeof}}">
+        <ul class="mobile-stack-navigation__list mobile-only">
+            {{#navigation.value}}
+                <li><a class="{{clazz}}" href="{{path}}" data-tag="{{dataTag}}">{{{title}}}</a></li>
+            {{/navigation.value}}
+        </ul>
+    </section>
+    
+</script>

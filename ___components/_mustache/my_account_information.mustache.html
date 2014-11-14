@@ -1,0 +1,14 @@
+<script id="my_account_information_template" type="text/html">
+
+    <section class="my-account-information" about="{{about}}" typeof="{{typeof}}">
+        {{#myAccountInformation}}
+        <div class="my-account-information__name">{{{fullName}}}</div>
+        <div class="my-account-information__contact-area">
+            <div class="my-account-information__contact-phone">{{{phoneNumber}}}</div>
+            <div class="my-account-information__contact-email">{{{emailAddress}}}</div>
+        </div>
+        <button class="my-account-information__edit-account-btn btn">{{{labels.button.editAccount}}}</button>
+        {{/myAccountInformation}}
+    </section>
+
+</script>

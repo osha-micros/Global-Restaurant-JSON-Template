@@ -1,0 +1,31 @@
+<script id="sign_in_template" type="text/html">
+
+    <section class="sign-in" about="{{about}}" typeof="{{typeof}}">
+        {{#signIn}}
+        <div class="sign-in__title">{{{labels.text.title}}}</div>
+        <form class="sign-in-form form-inline" action="#">
+            <div class="form-group form-group-email">
+                <label for="sign-in-form__email-address">{{{labels.text.emailAddress}}}</label>
+                <input type="email" class="form-control sign-in-form__email-address" placeholder="{{{labels.placeholder.emailAddress}}}" required>
+            </div>
+            
+            <div class="form-group form-group-password">
+                <label for="sign-in-form__password">{{{labels.text.password}}}</label>
+                <input type="password" class="form-control sign-in-form__password" placeholder="{{{labels.placeholder.password}}}" required>
+            </div>
+            
+            <div class="form-group form-group-remember-me-checkbox form-group-forgot-password">
+                <div class="form-group-remember-me-checkbox-area">
+                    <input type="checkbox" class="sign-in-form__remember-me-checkbox" name="sign-in-form__remember-me-checkbox">
+                    <label for="sign-in-form__remember-me-checkbox">{{{labels.text.rememberMeCheckbox}}}</label>
+                </div>
+                
+                <a href="#" class="sign-in-form__forgot-password-link" data-toggle="modal" data-target="#modal-forgot-password">{{{labels.text.forgotPassword}}}</a>
+            </div>
+            
+            <button type="submit" class="sign-in-form__submit-btn btn btn-gold">{{{labels.button.submit}}}</button>
+        </form>
+        {{/signIn}}
+    </section>
+
+</script>

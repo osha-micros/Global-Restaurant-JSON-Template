@@ -1,0 +1,199 @@
+{
+    "name": "My Favorite Orders",
+    "about": "/my/favorite/orders",
+    "typeof": "Component",
+    "myFavoriteOrders": {
+        "labels": {
+            "button": {
+                "reOrder": "Re-Order"
+            }
+        },
+        "order": [
+            {
+                "dateTime": "Mon, 11/03/2014 7:30pm",
+                "links": {
+                    "reOrder": {
+                        "path": "#",
+                        "title": ""
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                },
+                "orderItems": [
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/signatures/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "july salad",
+                        "description": "organic mesclun + organic baby spinach with local peaches, local goat cheese, toasted almonds and organic basil; topped with our housemade balsamic vinaigrette (dressing comes on the side) - 395 cal"
+                    },
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/drinks/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "house tea",
+                        "description": ""
+                    },
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/myo/1.jpg",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "Create Your Own",
+                        "description": "Your own creation. You added: Kale, Spinach, Avocado."
+                    }
+                ]
+            },
+            {
+                "dateTime": "Mon, 11/05/2014 1:05pm",
+                "links": {
+                    "orderNow": {
+                        "path": "#",
+                        "title": "Order Now"
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                },
+                "orderItems": [
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/signatures/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "july salad",
+                        "description": "organic mesclun + organic baby spinach with local peaches, local goat cheese, toasted almonds and organic basil; topped with our housemade balsamic vinaigrette (dressing comes on the side) - 395 cal"
+                    },
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/drinks/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "house tea",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "dateTime": "Mon, 11/05/2014 1:05pm",
+                "links": {
+                    "orderNow": {
+                        "path": "#",
+                        "title": "Order Now"
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                },
+                "orderItems": [
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/signatures/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "july salad",
+                        "description": "organic mesclun + organic baby spinach with local peaches, local goat cheese, toasted almonds and organic basil; topped with our housemade balsamic vinaigrette (dressing comes on the side) - 395 cal"
+                    },
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/drinks/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "house tea",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "dateTime": "Mon, 11/05/2014 1:05pm",
+                "links": {
+                    "orderNow": {
+                        "path": "#",
+                        "title": "Order Now"
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                },
+                "orderItems": [
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/signatures/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "july salad",
+                        "description": "organic mesclun + organic baby spinach with local peaches, local goat cheese, toasted almonds and organic basil; topped with our housemade balsamic vinaigrette (dressing comes on the side) - 395 cal"
+                    },
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/drinks/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "house tea",
+                        "description": ""
+                    }
+                ]
+            },
+            {
+                "dateTime": "Mon, 11/05/2014 1:05pm",
+                "links": {
+                    "orderNow": {
+                        "path": "#",
+                        "title": "Order Now"
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                },
+                "orderItems": [
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/signatures/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "july salad",
+                        "description": "organic mesclun + organic baby spinach with local peaches, local goat cheese, toasted almonds and organic basil; topped with our housemade balsamic vinaigrette (dressing comes on the side) - 395 cal"
+                    },
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/drinks/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "house tea",
+                        "description": ""
+                    }
+                ]
+            }         
+        ]
+    }
+}

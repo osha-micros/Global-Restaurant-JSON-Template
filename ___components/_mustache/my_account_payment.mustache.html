@@ -1,0 +1,81 @@
+<script id="my_account_payment_template" type="text/html">
+
+    <section class="my-account-payment" about="{{about}}" typeof="{{typeof}}">
+
+        <div class="my-account-payment-area">
+           
+            <div class="my-account-payment-left">
+                <div class="my-account-payment-cards">
+                    {{#myAccountPaymentCards}}
+                    <div class="my-account-payment-cards__title">{{{labels.text.paymentCardsTitle}}}</div>
+                    <ul class="my-account-payment-cards__list">
+                        {{#cards}}
+                        <li class="my-account-payment-cards__list-item">
+                            <img class="my-account-payment-cards__list-item-image" src="{{image.src}}" alt="{{image.alt}}" width="{{image.width}}" height="{{image.height}}">
+                            <div class="my-account-payment-cards__list-item-ending-in">{{{labels.text.endingIn}}} {{details.endingInDigits}} <span class="my-account-payment-cards__list-item-actions"><a href="#" class="my-account-payment-cards__list-item-action-edit">{{links.edit.title}}</a> | <a href="#" class="my-account-payment-cards__list-item-action-remove">{{links.remove.title}}</a></span></div>
+                            <div class="my-account-payment-cards__list-item-full-name">{{{details.fullName}}}</div>
+                            <div class="my-account-payment-cards__list-item-expiration">{{{labels.text.expiration}}} {{details.expirationDate}}</div>
+                        </li>
+                        {{/cards}}
+                    </ul>
+                    {{/myAccountPaymentCards}}
+                </div>
+            </div>
+            
+<!--            START HERE TOMORROW - GET THE FORM JSON/Mustache done -->
+            
+            <div class="my-account-payment-right">
+                <button class="my-account-payment-cards__add-credit-card-btn btn btn-gold">{{{myAccountPaymentCards.labels.button.addCreditCard}}}</button>
+
+                {{#myAccountAddCreditCardForm}}
+                <form class="add-credit-card-form" action="#">
+                    <div class="form-group add-credit-card-form-group">
+                        <label for="add-credit-card-form__credit-card-type">{{{labels.text.creditCardType}}}</label>
+                        <select class="form-control add-credit-card-form__credit-card-type" required>
+                            <option value="">
+                                {{{labels.blankSelectDefault.creditCardType}}}
+                            </option>
+                            {{#creditCardType}}
+                            <option value="{{value}}" {{#selected}}selected{{/selected}}>
+                                {{text}}
+                            </option>
+                            {{/creditCardType}}
+                        </select>
+                        <label for="add-credit-card-form__credit-card-name">{{{labels.text.creditCardName}}}</label>
+                        <input type="text" class="form-control add-credit-card-form__credit-card-name" placeholder="{{{labels.placeholder.creditCardName}}}" required>
+                        <label for="add-credit-card-form__credit-card-number">{{{labels.text.creditCardNumber}}}</label>
+                        <input type="text" class="form-control add-credit-card-form__credit-card-number" placeholder="{{{labels.placeholder.creditCardNumber}}}" required>
+                        <label for="add-credit-card-form__credit-card-expiration-date">{{{labels.text.creditCardExpiration}}}</label>
+                        <select class="form-control add-credit-card-form__credit-card-expiration-month" required>
+                            <option value="">
+                                {{{labels.blankSelectDefault.creditCardExpirationMonth}}}
+                            </option>
+                            {{#creditCardExpiration.month}}
+                            <option value="{{value}}" {{#selected}}selected{{/selected}}>
+                                {{text}}
+                            </option>
+                            {{/creditCardExpiration.month}}
+                        </select>
+                        <select class="form-control add-credit-card-form__credit-card-expiration-year" required>
+                            <option value="">
+                                {{{labels.blankSelectDefault.creditCardExpirationYear}}}
+                            </option>
+                            {{#creditCardExpiration.year}}
+                            <option value="{{value}}" {{#selected}}selected{{/selected}}>
+                                {{text}}
+                            </option>
+                            {{/creditCardExpiration.year}}
+                        </select>
+                        <label for="add-credit-card-form__credit-card-security-code">{{{labels.text.creditCardSecurityCode}}}</label>
+                        <input type="text" class="form-control add-credit-card-form__credit-card-security-code" placeholder="{{{labels.placeholder.creditCardSecurityCode}}}" required>
+                    </div>
+                    <button type="submit" class="add-credit-card-form__submit-btn btn btn-gold">{{{labels.button.saveCreditCard}}}</button>
+                </form>
+                {{/myAccountAddCreditCardForm}}
+            </div>
+            
+        </div>
+   
+    </section>
+
+</script>

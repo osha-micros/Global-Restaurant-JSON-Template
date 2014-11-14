@@ -1,0 +1,83 @@
+<script id="create_account_template" type="text/html">
+
+    <section class="create-account" about="{{about}}" typeof="{{typeof}}">
+        {{#createAccount}}
+        <form class="create-account-form" action="#">
+            <div class="form-group form-group-full-name">
+                <span class="create-account-form__first-name-area">
+                    <label for="create-account-form__first-name">{{{labels.text.firstName}}}</label>
+                    <input type="text" class="form-control create-account-form__first-name" placeholder="{{{labels.placeholder.firstName}}}" required>
+                </span>
+                <span class="create-account-form__last-name-area">
+                    <label for="create-account-form__last-name">{{{labels.text.lastName}}}</label>
+                    <input type="text" class="form-control create-account-form__last-name" placeholder="{{{labels.placeholder.lastName}}}" required>
+                </span>
+            </div>
+            <div class="form-group form-group-email">
+                <span class="create-account-form__email-address-area">
+                    <label for="create-account-form__email-address">{{{labels.text.emailAddress}}}</label>
+                    <input type="email" class="form-control create-account-form__email-address" placeholder="{{{labels.placeholder.emailAddress}}}" required>
+                </span>
+                <span class="create-account-form__email-address-confirm-area">
+                    <label for="create-account-form__email-address-confirm">{{{labels.text.emailAddressConfirm}}}</label>
+                    <input type="email" class="form-control create-account-form__email-address-confirm" placeholder="{{{labels.placeholder.emailAddressConfirm}}}" required>
+                </span>
+            </div>
+            <div class="form-group form-group-password">
+                <span class="create-account-form__password-area">
+                    <label for="create-account-form__password">{{{labels.text.password}}}</label>
+                    <input type="password" class="form-control create-account-form__password" placeholder="{{{labels.placeholder.password}}}" required>
+                </span>
+                <span class="create-account-form__password-confirm-area">
+                    <label for="create-account-form__password-confirm">{{{labels.text.passwordConfirm}}}</label>
+                    <input type="password" class="form-control create-account-form__password-confirm" placeholder="{{{labels.placeholder.passwordConfirm}}}" required>
+                </span>
+            </div>
+            <div class="form-group form-group-phone">
+                <span class="create-account-form__phone-number-area">
+                    <label for="create-account-form__phone-number">{{{labels.text.phoneNumber}}}</label>
+                    <input type="text" class="form-control create-account-form__phone-number" placeholder="{{{labels.placeholder.phoneNumber}}}" required>
+                </span>
+            </div>
+            <div class="form-group form-group-address">
+                <span class="create-account-form__location-name-address-area">
+                    <label for="create-account-form__location-name-address">{{{labels.text.locationName}}}</label>
+                    <input type="text" class="form-control create-account-form__location-name-address" placeholder="{{{labels.placeholder.locationName}}}">
+                </span>
+                <span class="create-account-form__street-address-area">
+                    <label for="create-account-form__street-address">{{{labels.text.streetAddress}}}</label>
+                    <input type="text" class="form-control create-account-form__street-address" placeholder="{{{labels.placeholder.streetAddress}}}" required>
+                </span>
+                <span class="create-account-form__city-address-area">
+                    <label for="create-account-form__city-address">{{{labels.text.city}}}</label>
+                    <input type="text" class="form-control create-account-form__city-address" placeholder="{{{labels.placeholder.city}}}" required>
+                </span>
+                <span class="create-account-form__state-address-area">
+                    <label for="create-account-form__state-address">{{{labels.text.state}}}</label>
+                    <select class="form-control create-account-form__state-address" required>
+                        <option value="default" selected>Select State</option>
+                        {{#states.value}}
+                        <option value="{{abbreviation}}">{{state}}</option>
+                        {{/states.value}}
+                    </select>
+                </span>
+                <span class="create-account-form__zip-code-address-area">
+                    <label for="create-account-form__zip-code-address">{{{labels.text.zipCode}}}</label>
+                    <input type="text" class="form-control create-account-form__zip-code-address" placeholder="{{{labels.placeholder.zipCode}}}" required>
+                </span>
+            </div>
+            <div class="form-group form-group-terms-checkbox">
+                <div class="checkbox form-group-terms-checkbox-area">
+                    <label for="create-account-form__terms-checkbox">
+                        <input type="checkbox" class="create-account-form__terms-checkbox" value="" name="create-account-form__terms-checkbox"> {{{labels.text.termsCheckbox}}}
+                    </label>
+                </div>
+            </div>
+            <div class="create-account-form__submit-btn-area">
+                <button type="submit" class="create-account-form__submit-btn btn btn-gold">{{{labels.button.submit}}}</button>
+            </div>
+        </form>
+        {{/createAccount}}
+    </section>
+
+</script>

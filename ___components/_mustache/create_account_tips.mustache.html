@@ -1,0 +1,14 @@
+<script id="create_account_tips_template" type="text/html">
+
+    <section class="create-account-tips" about="{{about}}" typeof="{{typeof}}">
+        {{#createAccountTips}}
+        <div class="create-account-tips__title">{{{labels.text.title}}}</div>
+        <ul class="create-account-tips__list">
+            {{#tips.text}}
+            <li>{{{title}}}</li>
+            {{/tips.text}}
+        </ul>
+        {{/createAccountTips}}
+    </section>
+
+</script>

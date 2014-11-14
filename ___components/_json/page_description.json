@@ -1,0 +1,19 @@
+{
+    "name": "Page Description",
+    "about": "/page/description",
+    "typeof": "Component",
+    "pageDescription": {
+        "storeDetails": {
+            "description" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex each",
+            "clazz": ""
+        },
+        "contactUs": {
+            "description" : "We would love to hear from you! Now you can send us your feedback online with no waiting. For answers to frequently asked questions or for information about specific programs, please use the resources below.",
+            "clazz": ""
+        },
+        "createAccount": {
+            "description" : "",
+            "clazz": ""
+        }
+    }
+}

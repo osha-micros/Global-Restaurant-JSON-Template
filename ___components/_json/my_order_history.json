@@ -1,0 +1,171 @@
+{
+    "name": "My Order History",
+    "about": "/my/order/history",
+    "typeof": "Component",
+    "myOrderHistoryFormTimeRange": {
+        "labels": {
+            "text": {
+                "timeRange": "Show me orders from:",
+                "formTip": "*Results are limited to most recent 20 orders and data older than 1 year may not be available."
+            }
+        },
+        "timeRanges": [
+            {
+                "timeRange": "the last 2 weeks",
+                "value": "2-weeks",
+                "selected": true
+            },
+            {
+                "timeRange": "the last 3 months",
+                "value": "3-months",
+                "selected": false
+            },
+            {
+                "timeRange": "the last 6 months",
+                "value": "6-months",
+                "selected": false
+            },
+            {
+                "timeRange": "the last 12 months",
+                "value": "12-months",
+                "selected": false
+            }
+        ]
+    },
+    "myOrderHistoryOrders": {
+        "labels": {
+            "button": {
+                "reOrder": "Re-Order"
+            },
+            "text": {
+                "orderNumber": "Order #"
+            }
+        },
+        "order": [
+            {
+                "panelNumber": "1",
+                "panelExpanded": true,
+                "dateTime": "Mon, 11/03/2005 7:30pm",
+                "orderNumber": "T0000003",
+                "links": {
+                    "reOrder": {
+                        "path": "#",
+                        "title": ""
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                },
+                "orderItems": [
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/signatures/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "july salad",
+                        "description": "organic mesclun + organic baby spinach with local peaches, local goat cheese, toasted almonds and organic basil; topped with our housemade balsamic vinaigrette (dressing comes on the side) - 395 cal"
+                    },
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/drinks/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "house tea",
+                        "description": "refreshing iced tea."
+                    },
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/sweetflow/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "original tart - small",
+                        "description": "made with organic yogurt (fat-free). variety of seasonal toppings available. pick your 3 toppings at time of pick-up."
+                    }
+                ]
+            },
+            {
+                "panelNumber": "2",
+                "panelExpanded": false,
+                "dateTime": "Tues, 8/11/2004 12:00am",
+                "orderNumber": "T0000002",
+                "links": {
+                    "orderNow": {
+                        "path": "#",
+                        "title": "Order Now"
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                },
+                "orderItems": [
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/signatures/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "july salad",
+                        "description": "organic mesclun + organic baby spinach with local peaches, local goat cheese, toasted almonds and organic basil; topped with our housemade balsamic vinaigrette (dressing comes on the side) - 395 cal"
+                    },
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/drinks/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "house tea",
+                        "description": "refreshing iced tea."
+                    }
+                ]
+            },
+            {
+                "panelNumber": "3",
+                "panelExpanded": false,
+                "dateTime": "Wed, 6/01/2004 10:30pm",
+                "orderNumber": "T0000001",
+                "links": {
+                    "orderNow": {
+                        "path": "#",
+                        "title": "Order Now"
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                },
+                "orderItems": [
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/signatures/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "july salad",
+                        "description": "organic mesclun + organic baby spinach with local peaches, local goat cheese, toasted almonds and organic basil; topped with our housemade balsamic vinaigrette (dressing comes on the side) - 395 cal"
+                    },
+                    {
+                        "image": {
+                            "src" : "images/_sg/menu/drinks/1.png",
+                            "width" : 91,
+                            "height" : 70,
+                            "alt" : "Order Item"
+                        },
+                        "title": "house tea",
+                        "description": "refreshing iced tea."
+                    }
+                ]
+            }       
+        ]
+    }
+}

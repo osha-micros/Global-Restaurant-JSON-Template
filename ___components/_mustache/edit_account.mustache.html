@@ -1,0 +1,39 @@
+<script id="edit_account_template" type="text/html">
+
+    <section class="edit-account" about="{{about}}" typeof="{{typeof}}">
+        {{#editAccount}}
+        <form class="edit-account-form" action="#">
+            <div class="form-group form-group-full-name">
+                <span class="edit-account-form__first-name-area">
+                    <label for="edit-account-form__first-name">{{{labels.text.firstName}}}</label>
+                    <input type="text" class="form-control edit-account-form__first-name" placeholder="{{{labels.placeholder.firstName}}}" value="{{{formValues.firstName}}}" required>
+                </span>
+                <span class="edit-account-form__last-name-area">
+                    <label for="edit-account-form__last-name">{{{labels.text.lastName}}}</label>
+                    <input type="text" class="form-control edit-account-form__last-name" placeholder="{{{labels.placeholder.lastName}}}" value="{{{formValues.lastName}}}" required>
+                </span>
+            </div>
+            <div class="form-group form-group-email-password">
+                <span class="edit-account-form__email-address-area">
+                    <label for="edit-account-form__email-address">{{{labels.text.emailAddress}}}</label>
+                    <input type="email" class="form-control edit-account-form__email-address" placeholder="{{{labels.placeholder.emailAddress}}}" value="{{{formValues.emailAddress}}}" required>
+                </span>
+                <span class="edit-account-form__password-area">
+                    <label for="edit-account-form__password">Password</label>
+                    <div class="edit-account-form__password-change-link-wrapper"><a class="edit-account-form__password-change-link">{{{labels.text.passwordChange}}}</a></div>
+                </span>
+            </div>
+            <div class="form-group form-group-phone">
+                <span class="edit-account-form__phone-number-area">
+                    <label for="edit-account-form__phone-number">{{{labels.text.phoneNumber}}}</label>
+                    <input type="text" class="form-control edit-account-form__phone-number" placeholder="{{{labels.placeholder.phoneNumber}}}" value="{{{formValues.phoneNumber}}}" required>
+                </span>
+            </div>
+            <div class="edit-account-form__submit-btn-area">
+                <button type="submit" class="edit-account-form__submit-btn btn btn-gold">{{{labels.button.submit}}}</button>
+            </div>
+        </form>
+        {{/editAccount}}
+    </section>
+
+</script>

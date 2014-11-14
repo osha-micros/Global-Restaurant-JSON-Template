@@ -1,0 +1,70 @@
+.sign-in {
+    padding: 14px;
+    margin-top: 12px;
+
+    @media only screen and (max-width: 405px) {
+        padding-top: 0;
+    }
+
+    &__title {
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    &-form {
+        padding-top: 5px;
+
+        label {
+             font-weight: normal;   
+        }
+
+        .form-group {
+            display: block;
+            margin-bottom: 10px;
+
+            > label {
+                width: 164px;
+
+                @media only screen and (max-width: 840px) {
+                    display: block;
+                }
+            }
+            &-remember-me-checkbox-area {
+                margin-left: 168px;
+                display: inline-block;
+
+                @media only screen and (max-width: 840px) {
+                    margin-left: 0;
+                }
+
+                label {
+                    font-size: 13px;
+                }
+            }
+        }
+        
+        &__email-address, &__password {
+            width: 270px !important;
+        }
+    
+        &__forgot-password-link {
+            font-size: 11px;
+            margin-left: 50px;
+            color: @baseRed;
+        }
+
+        &__submit-btn {
+            margin-left: 167px;
+            width: 101px;
+
+            @media only screen and (max-width: 840px) {
+                margin-left: 0;
+            }
+
+            @media only screen and (max-width: 405px) {
+                width: 270px;
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<script id="guest_create_account_template" type="text/html">
+
+    <section class="guest-create-account" about="{{about}}" typeof="{{typeof}}">
+        {{#guestCreateAccount}}
+        <div class="guest-create-account__title">{{{labels.text.title}}}</div>
+        <div class="guest-create-account__actions">
+            <a href="create-account.html" class="guest-create-account__link">
+                <button type="submit" class="guest-create-account__create-account-btn btn btn-gold">{{{labels.button.createAccount}}}</button>
+            </a>    
+        </div>
+        {{/guestCreateAccount}}
+    </section>
+
+</script>

@@ -1,0 +1,25 @@
+{
+    "name": "Create Account Tips",
+    "about": "/create/account/tips",
+    "typeof": "Component",
+    "createAccountTips": {
+        "labels": {
+            "text": {
+                "title": "With your account you can..."
+            }
+        },
+        "tips": {
+            "text": [
+                {
+                    "title": "Save your favorites for faster ordering"
+                },
+                {
+                    "title": "Speed through checkout with saved delivery addresses and payment information"
+                },
+                {
+                    "title": "Get exclusive deals, right in your inbox"
+                }
+            ]
+        }
+    }
+}

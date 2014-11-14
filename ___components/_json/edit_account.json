@@ -1,0 +1,34 @@
+{
+    "name": "Edit Account",
+    "about": "/edit/account",
+    "typeof": "Component",
+    "editAccount": {
+        "labels": {
+            "text": {
+                "firstName": "First name *",
+                "lastName": "Last name *",
+                "emailAddress": "Email address *",
+                "emailAddressConfirm": "Confirm email address *",
+                "password": "Password",
+                "passwordChange": "Change password",
+                "phoneNumber": "Phone number *"
+            },
+            "button": {
+                "submit": "Save information"
+            },
+            "placeholder": {
+                "firstName": "First name",
+                "lastName": "Last name",
+                "emailAddress": "you@example.com",
+                "emailAddressConfirm": "you@example.com",
+                "phoneNumber": "(xxx) xxx-xxxx"
+            }
+        },
+        "formValues": {
+            "firstName": "Marshall",
+            "lastName": "Mathers",
+            "emailAddress": "marshall.mathers@dell.com",
+            "phoneNumber": "(202) 555-1212"
+        }
+    }
+}

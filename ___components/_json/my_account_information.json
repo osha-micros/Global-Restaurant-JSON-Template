@@ -1,0 +1,15 @@
+{
+    "name": "My Account Information",
+    "about": "/my/account/information",
+    "typeof": "Component",
+    "myAccountInformation": {
+        "labels": {
+            "button": {
+                "editAccount": "edit account"
+            }
+        },
+        "fullName": "Marshall Mathers",
+        "phoneNumber": "(202) 555-1212",
+        "emailAddress": "email@gmail.com"
+    }
+}

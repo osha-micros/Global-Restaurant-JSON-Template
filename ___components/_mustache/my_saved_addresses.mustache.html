@@ -1,0 +1,25 @@
+<script id="my_saved_addresses_template" type="text/html">
+
+    <section class="my-saved-addresses" about="{{about}}" typeof="{{typeof}}">
+        {{#mySavedAddresses}}
+        <div class="my-saved-addresses__title">{{{labels.text.title}}}</div>
+        <ul class="my-saved-addresses__list">
+            {{#locations}}
+            <li>
+                <div class="my-saved-addresses__number">{{number}}</div>
+                <div class="my-saved-addresses__location">
+                    <div class="my-saved-addresses__line">{{{address.line_1}}} <span class="my-saved-addresses__actions"><a href="{{{links.edit.path}}}" class="my-saved-addresses__action-edit">{{{links.edit.title}}}</a> | <a href="{{{links.remove.path}}}" class="my-saved-addresses__action-remove">{{{links.remove.title}}}</a></span></div>
+                    <div class="my-saved-addresses__line">{{{address.line_2}}}</div>
+                    <div class="my-saved-addresses__line my-saved-addresses__line-phone">{{{address.phone}}}</div>
+                    <a href="{{{links.orderNow.path}}}" class="my-saved-addresses__order-now">{{{links.orderNow.title}}}</a>
+                </div>
+            </li>
+            {{/locations}}
+        </ul>
+        <div class="my-saved-addresses__add-address-btn-area">
+            <button class="my-saved-addresses__add-address-btn btn btn-gold">{{{labels.button.addAddress}}}</button>
+        </div>
+        {{/mySavedAddresses}}
+    </section>
+
+</script>

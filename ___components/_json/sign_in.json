@@ -1,0 +1,23 @@
+{
+    "name": "Sign In",
+    "about": "/sign/in",
+    "typeof": "Component",
+    "signIn": {
+        "labels": {
+            "text": {
+                "title": "Sign in to your account",
+                "emailAddress": "Email Address",
+                "password": "Password",
+                "rememberMeCheckbox" : "Remember Me",
+                "forgotPassword" : "Forgot your password?"
+            },
+            "button": {
+                "submit": "Sign In"
+            },
+            "placeholder": {
+                "emailAddress": "Your email",
+                "password": "Your password"
+            }
+        }
+    }
+}

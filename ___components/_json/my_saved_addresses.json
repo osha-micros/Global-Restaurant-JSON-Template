@@ -1,0 +1,61 @@
+{
+    "name": "My Saved Addresses",
+    "about": "/my/saved/addresses",
+    "typeof": "Component",
+    "mySavedAddresses": {
+        "labels": {
+            "text": {
+                "title": "My Saved Addresses"
+            },
+            "button": {
+                "addAddress": "Add Address"
+            }
+        },
+        "locations": [
+            {
+                "number": "1",
+                "address": {
+                    "line_1": "5550 Friendship Blvd #T100",
+                    "line_2": "Chevy Chase, MD, 20815",
+                    "phone": "(301) 841-4688"
+                },
+                "links": {
+                    "orderNow": {
+                        "path": "#",
+                        "title": "Order Now"
+                    },
+                    "edit": {
+                        "path": "#",
+                        "title": "edit"
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                }
+            },
+            {
+                "number": "2",
+                "address": {
+                    "line_1": "1871 Adams Ave.",
+                    "line_2": "Washington, DC, 20037",
+                    "phone": "(202) 555-1212"
+                },
+                "links": {
+                    "orderNow": {
+                        "path": "#",
+                        "title": "Order Now"
+                    },
+                    "edit": {
+                        "path": "#",
+                        "title": "edit"
+                    },
+                    "remove": {
+                        "path": "#",
+                        "title": "remove"
+                    }
+                }
+            }
+        ]
+    }
+}

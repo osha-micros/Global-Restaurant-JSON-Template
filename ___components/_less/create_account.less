@@ -1,0 +1,53 @@
+.create-account {
+    &-form {
+        .form-control {
+            margin-bottom: 5px;
+        }
+
+        .form-group {
+            display: inline-block;
+
+            label {
+                white-space: nowrap;
+            }
+
+            > span {
+                display: inline-block;
+                margin-right: 10px;
+
+                @media only screen and (max-width: 500px) {
+                    width: 100% !important;
+                    display: block;
+                }
+            }
+
+            &-full-name, &-email, &-phone, &-password, &-address, &-description {
+                width: 100%;
+            }
+            
+            &-terms-checkbox-area {
+                label {
+                    white-space: normal;
+                }
+            }
+        }
+
+        &__first-name-area, &__last-name-area, &__email-address-area, &__email-address-confirm-area, &__password-area, &__password-confirm-area, &__phone-number-area {
+            width: 48%;
+        }
+
+        &__city-address-area, &__state-address-area , &__zip-code-address-area {
+            width: 30%;
+        }
+
+        &__street-address-area, &__location-name-address-area {
+            display: block;
+            width: 98%;
+            margin-bottom: 15px;
+        }
+        
+        &__submit-btn-area {
+            text-align: left;
+        }
+    }
+}
